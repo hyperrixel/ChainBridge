@@ -1,4 +1,20 @@
 #!/usr/bin/python3
+"""
+        _                 _
+       (_)               | |
+ _ __   _  __  __   ___  | |
+| '__| | | \ \/ /  / _ \ | |
+| |    | |  >  <  |  __/ | |
+|_|    |_| /_/\_\  \___| |_|
+
+"""
+__author__ = ['Axel Ország-Krisz Dr.', 'Richárd Ádám Vécsey Dr.']
+__copyright__ = "Copyright 2021, ChainBridge Project"
+__credits__ = ['Axel Ország-Krisz Dr.', 'Richárd Ádám Vécsey Dr.']
+__license__ = 'Copyrighted'
+__version__ = '0.1'
+__status__ = 'Dev'
+
 
 from collections.abc import Iterable
 from decimal import Decimal
@@ -2547,6 +2563,15 @@ class CBDocument(object):
 
     def __init__(self, owner=None, id=None, created_at=None, closed_at=None,
                  expires_at=None, is_certified=False, is_anonymous=False):
+        """
+        Initializes the CBDocument
+        ==========================
+
+        Parameters
+        ----------
+        owner=None, id=None, created_at=None, closed_at=None,
+                     expires_at=None, is_certified=False, is_anonymous=False
+        """
 
         self.__owner = None
         self.__id = None
